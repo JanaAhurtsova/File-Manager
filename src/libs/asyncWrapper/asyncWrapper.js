@@ -1,6 +1,6 @@
-export const createFunc = async (fn) => {
+export const createFunc = async (fn, args) => {
   try {
-    await fn();
+    args ? await fn(args) : await fn();
     console.info(`You are currently in ${process.cwd()}`);
   } catch(err) {
     console.log('Operation failed');
