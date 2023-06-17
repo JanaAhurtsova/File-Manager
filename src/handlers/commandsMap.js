@@ -7,13 +7,14 @@ import { handleRename } from './commands/handleRename.js';
 import { handleCp } from './commands/handleCp.js';
 import { handleMv } from './commands/handleMv.js';
 import { handleRm } from './commands/handleRm.js';
+import { handleOs } from './commands/handleOs.js';
 
 export const commandsMap = {
   cat: handleCat,
   add: handleAdd,
   rn: handleRename,
   rm: handleRm,
-  // os: handleOs,
+  os: handleOs,
   cp: handleCp,
   mv: handleMv,
   // hash: handleHash,
