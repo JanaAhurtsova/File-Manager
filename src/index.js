@@ -1,5 +1,5 @@
 import { homedir } from 'os';
-import { getName } from './handlers/getName.js';
+import { getName } from './libs/getName/getName.js';
 import { createReadline } from './handlers/createReadline.js';
 
 process.chdir(homedir());

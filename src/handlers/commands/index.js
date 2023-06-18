@@ -9,3 +9,5 @@ export { handleMv } from './handleMv.js';
 export { handleRm } from './handleRm.js';
 export { handleOs } from './handleOs.js';
 export { handleHash } from './handleHash.js';
+export { handleCompress } from './handleCompress.js';
+export { handleDecompress } from './handleDecompress.js';

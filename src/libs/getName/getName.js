@@ -1,4 +1,4 @@
-import { defaultUsername } from "../constants/name/Name.js";
+import { defaultUsername } from "../../constants/name/Name.js";
 
 export const getName = () => {
   const username = process.argv.slice(2).map((arg) => {
