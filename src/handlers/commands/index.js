@@ -1,0 +1,11 @@
+export { handleLs } from './handleLs.js';
+export { handleUp } from './handleUp.js';
+export { handleCd } from './handleCd.js';
+export { handleCat } from './handleCat.js';
+export { handleAdd } from './handleAdd.js';
+export { handleRename } from './handleRename.js';
+export { handleCp } from './handleCp.js';
+export { handleMv } from './handleMv.js';
+export { handleRm } from './handleRm.js';
+export { handleOs } from './handleOs.js';
+export { handleHash } from './handleHash.js';

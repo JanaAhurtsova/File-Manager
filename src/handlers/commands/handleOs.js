@@ -1,4 +1,6 @@
 import { EOL, cpus, userInfo } from 'os';
+import { Invalid_Input } from '../../constants/errors/Errors.js';
+import { Params } from '../../constants/osParams/Params.js';
 
 export const handleOs = async ([params]) => {
   const cpusUser = cpus().map(({ model, speed }) => ({
@@ -9,22 +11,22 @@ export const handleOs = async ([params]) => {
   const { username, homedir } = userInfo();
 
   switch(params) {
-    case '--EOL':
-      console.log(EOL);
+    case Params.EOL:
+      console.log(JSON.stringify(EOL));
       break;
-    case '--cpus':
+    case Params.cpus:
       console.table(cpusUser);
       break;
-    case '--homedir':
+    case Params.homedir:
       console.log(homedir);
       break;
-    case '--username':
+    case Params.username:
       console.log(username);
       break;
-    case '--architecture':
+    case Params.architecture:
       console.log(process.arch);
       break;
     default:
-      console.log('Invalid input');
+      console.log(Invalid_Input);
   }
 }

@@ -13,3 +13,5 @@ export const Commands = [
   'ls',
   'up'
 ];
+
+export const Exit = '.exit';

@@ -1,8 +1,13 @@
 import { createReadStream } from 'fs';
 import path from 'path';
-import { pipeline } from 'stream/promises';
+import { Operation_Failed } from '../../constants/errors/Errors.js';
 
 export const handleCat = async ([pathTo]) => {
   const readStream = createReadStream(path.resolve(pathTo), 'utf-8');
-  await pipeline(readStream, process.stdout, { end: true });
+  readStream.on('data', (chunk) => {
+    console.log(chunk);
+  });
+  readStream.on('error', () => {
+    console.log(Operation_Failed);
+  });
 };

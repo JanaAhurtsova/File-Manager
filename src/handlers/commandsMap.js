@@ -1,26 +1,17 @@
-import { handleLs } from './commands/handleLs.js';
-import { handleUp } from './commands/handleUp.js';
-import { handleCd } from './commands/handleCd.js';
-import { handleCat } from './commands/handleCat.js';
-import { handleAdd } from './commands/handleAdd.js';
-import { handleRename } from './commands/handleRename.js';
-import { handleCp } from './commands/handleCp.js';
-import { handleMv } from './commands/handleMv.js';
-import { handleRm } from './commands/handleRm.js';
-import { handleOs } from './commands/handleOs.js';
+import * as handler from './commands/index.js';
 
 export const commandsMap = {
-  cat: handleCat,
-  add: handleAdd,
-  rn: handleRename,
-  rm: handleRm,
-  os: handleOs,
-  cp: handleCp,
-  mv: handleMv,
-  // hash: handleHash,
+  cat: handler.handleCat,
+  add: handler.handleAdd,
+  rn: handler.handleRename,
+  rm: handler.handleRm,
+  os: handler.handleOs,
+  cp: handler.handleCp,
+  mv: handler.handleMv,
+  hash: handler.handleHash,
   // compress: handleCompress,
   // decompress: handleDecompress,
-  ls: handleLs,
-  up: handleUp,
-  cd: handleCd,
+  ls: handler.handleLs,
+  up: handler.handleUp,
+  cd: handler.handleCd,
 };
