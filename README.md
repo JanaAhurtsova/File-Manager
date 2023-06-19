@@ -1,8 +1,12 @@
 # File Manager
-The program is started by npm-script start in following way:
+## :rocket: Running and start
+* Clone this repo: ```$ git clone https://github.com/JanaAhurtsova/File-Manager.git```
+* Go to downloaded folder: ```$ cd File-Manager```
+* Checkout to develop branch: ```$ git checkout develop```
+* The program is started by npm-script ```start``` in following way:
 
-    npm run start -- --username=your_username
-The program is finished by ```Ctrl+C``` or ```.exit```
+      npm run start -- --username=your_username
+* The program is finished by ```Ctrl+C``` or ```.exit```
 ### List of operations and their syntax:
 * Navigation & working directory (nwd)
     * Go upper from current directory:
