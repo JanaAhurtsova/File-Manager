@@ -7,9 +7,15 @@ export const handleCommand = async (input, rl) => {
   try {
     const argsArr = input.trim().split(' ');
     const [command, ...args] = argsArr;
+    let refactorArgs = [...args];
 
+    if ((/["']/g).test(refactorArgs.join(' '))) {
+      refactorArgs = args.join(' ').split(/["'] | ["']/).map((arg) => arg.replace(/["']/g, ''));
+    }
+
+    console.log(refactorArgs)
     if(Commands.includes(command)) {
-      await createFunc(commandsMap[command], args);
+      await createFunc(commandsMap[command], refactorArgs);
     } else if(command === Exit) {
       rl.close();
     } else {
