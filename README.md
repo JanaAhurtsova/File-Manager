@@ -7,6 +7,7 @@
 
       npm run start -- --username=your_username
 * The program is finished by ```Ctrl+C``` or ```.exit```
+* If file or directory has space in name write it in quotes
 ### List of operations and their syntax:
 * Navigation & working directory (nwd)
     * Go upper from current directory:
