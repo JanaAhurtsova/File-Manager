@@ -13,7 +13,6 @@ export const handleCommand = async (input, rl) => {
       refactorArgs = args.join(' ').split(/["'] | ["']/).map((arg) => arg.replace(/["']/g, ''));
     }
 
-    console.log(refactorArgs)
     if(Commands.includes(command)) {
       await createFunc(commandsMap[command], refactorArgs);
     } else if(command === Exit) {
