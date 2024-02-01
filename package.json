@@ -17,5 +17,9 @@
   ],
   "author": "Jana Ahurtsova",
   "license": "ISC",
-  "homepage": "https://github.com/JanaAhurtsova/File-Manager#readme"
+  "homepage": "https://github.com/JanaAhurtsova/File-Manager#readme",
+  "dependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.11.14"
+  }
 }
